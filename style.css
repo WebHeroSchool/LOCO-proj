@@ -4,26 +4,23 @@ height: 900px;
 }
 
 .header {
-display: inline;
-position: relative;
+display: flex;
 }
 
 .header::before {
-display: inline-block;
 content: '';
 position: absolute;
 width: 461px;
 height: 900px;
-top: 0;
 background: #000;
 }
 
 .header__title {
-position: absolute;
+position: relative;
 width: 98px;
 height: 37px;
-top: 36px;
-left: 52px;
+margin-right: 238px;
+margin-left: 52px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
@@ -34,24 +31,25 @@ letter-spacing: 0.07em;
 color: #FFF;
 }
 
+.header__language {
+  position: relative;
+  display: flex;
+}
+
 .header__language-ru {
-position: absolute;
 width: 31px;
 height: 25px;
-top: 42px;
-left: 388px;
-right: 1021px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
 text-align: right;
-color: #FFF
+color: #FFF;
 }
 
 .img {
-position: absolute;
+position: relative;
 width: 11px;
 height: 5.5px;
 left: 426px;
@@ -61,11 +59,16 @@ color: #000;
 }
 
 .new-collection {
-position: relative;
+  position: relative;
+}
+
+.new-collection__girl {
+display: flex;
+width: 549px;
+height: 562px;
 }
 
 .new-collection__title {
-position: absolute;
 width: 475px;
 height: 164px;
 left: 789px;
@@ -79,7 +82,6 @@ color: #000;
 }
 
 .new-collection__description {
-position: absolute;
 width: 467px;
 height: 127px;
 left: 789px;
@@ -93,7 +95,6 @@ color: #000;
 }
 
 .new-collection__farther {
-position: absolute;
 width: 203px;
 height: 44px;
 left: 786px;
@@ -109,7 +110,6 @@ color: #000;
 }
 
 .new-collection__other {
-position: absolute;
 left: 1043px;
 top: 469px;
 outline: 0;
