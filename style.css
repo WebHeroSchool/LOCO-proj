@@ -19,8 +19,7 @@ background: #000;
 position: relative;
 width: 98px;
 height: 37px;
-margin-right: 238px;
-margin-left: 52px;
+margin: 36px 0 0 52px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
@@ -39,6 +38,7 @@ color: #FFF;
 .header__language-ru {
 width: 31px;
 height: 25px;
+margin: 42px 0 0 238px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
@@ -48,31 +48,37 @@ text-align: right;
 color: #FFF;
 }
 
-.img {
+.header__vector {
 position: relative;
-width: 11px;
-height: 5.5px;
-left: 426px;
-top: 54px;
+margin: 54px 0 0 7px;
+width: 14px;
+height: 8px;
 border: 2px;
 color: #000;
 }
 
+.header__menu {
+width: 92px;
+height: 92px;
+padding: 0 0 0 979px;
+}
+
 .new-collection {
   position: relative;
+  display: flex;
 }
 
 .new-collection__girl {
-display: flex;
 width: 549px;
 height: 562px;
+margin: 86px 54px 0px 169px;
 }
 
 .new-collection__title {
 width: 475px;
 height: 164px;
 left: 789px;
-padding-bottom: 26px;
+margin: 186px 155px 473px 0;
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
@@ -125,9 +131,13 @@ color: #000;
 
 .social-networks {
 position: absolute;
-top: 816px;
+margin: 725px 0px 41px 42px;
+}
+
+.social__link, .social__link-vk {
+  margin-right: 13px;
 }
 
 .clutch {
-margin-top: 800px;
+margin-top: 500px;
 }
