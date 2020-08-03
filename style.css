@@ -1,17 +1,17 @@
 .body {
-width: 1440px;
-height: 900px;
+margin: 0;
 }
 
 .header {
 display: flex;
+align-items: center;
 }
 
 .header::before {
 content: '';
 position: absolute;
 width: 461px;
-height: 900px;
+height: 1800px;
 background: #000;
 }
 
@@ -19,7 +19,7 @@ background: #000;
 position: relative;
 width: 98px;
 height: 37px;
-margin: 36px 0 0 52px;
+margin: 0 0 0 52px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
@@ -33,34 +33,34 @@ color: #FFF;
 .header__language {
   position: relative;
   display: flex;
+  width: 238px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header__language-ru {
 width: 31px;
 height: 25px;
-margin: 42px 0 0 238px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 24px;
-text-align: right;
 color: #FFF;
 }
 
-.header__vector {
-position: relative;
-margin: 54px 0 0 7px;
-width: 14px;
-height: 8px;
-border: 2px;
-color: #000;
+.header__language-ru::after {
+  position:absolute;
+  background-image: url(./img/Vector%20.2.png);
+  left: 7px;
+  top: 54px;
+  color: #FFF;
 }
 
 .header__menu {
 width: 92px;
 height: 92px;
-padding: 0 0 0 979px;
+margin-left: auto;
 }
 
 .new-collection {
@@ -74,11 +74,16 @@ height: 562px;
 margin: 86px 54px 0px 169px;
 }
 
+.new-collection__section {
+  position:relative;
+  top: 100px;
+}
+
 .new-collection__title {
 width: 475px;
 height: 164px;
+margin-bottom: 36px;
 left: 789px;
-margin: 186px 155px 473px 0;
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
@@ -88,10 +93,8 @@ color: #000;
 }
 
 .new-collection__description {
-width: 467px;
-height: 127px;
-left: 789px;
-top: 263px;
+width: 508px;
+margin-bottom: 36px;
 font-family: Montserrat, sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -103,8 +106,7 @@ color: #000;
 .new-collection__farther {
 width: 203px;
 height: 44px;
-left: 786px;
-top: 460px;
+margin-right: 54px;
 font-family: Montserrat, sans-serif;
 font-style: normal;
 font-weight: 500;
@@ -116,8 +118,6 @@ color: #000;
 }
 
 .new-collection__other {
-left: 1043px;
-top: 469px;
 outline: 0;
 border: 0;
 font-family: Montserrat, sans-serif;
@@ -129,9 +129,26 @@ text-transform: uppercase;
 color: #000;
 }
 
+.new-collection__other::after {
+content: "";
+display: inline-block;
+background-image: url(./img/Vector%202.1.png);
+left: 19px;
+position: relative;
+width: 44px;
+height: 12px;
+color: #000;
+}
+
+.new-collection__scrooll {
+width: 27px;
+height: 46px;
+}
+
 .social-networks {
 position: absolute;
-margin: 725px 0px 41px 42px;
+bottom: 41px;
+left: 52px;
 }
 
 .social__link, .social__link-vk {
