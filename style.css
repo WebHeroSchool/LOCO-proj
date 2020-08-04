@@ -19,7 +19,7 @@ background: #000;
 position: relative;
 width: 98px;
 height: 37px;
-margin: 0 0 0 52px;
+margin: 36px 0 0 52px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
@@ -36,6 +36,7 @@ color: #FFF;
   width: 238px;
   justify-content: flex-end;
   align-items: center;
+  top: 20px;
 }
 
 .header__language-ru {
@@ -50,28 +51,55 @@ color: #FFF;
 }
 
 .header__language-ru::after {
+  content: "";
   position:absolute;
-  background-image: url(./img/Vector%20.2.png);
+  background-image: url(./img/Vector%202.png);
   left: 7px;
   top: 54px;
   color: #FFF;
 }
 
-.header__menu {
-width: 92px;
-height: 92px;
-margin-left: auto;
+.header__menu:{
+box-sizing: content-box;
+}
+
+.menu__item {
+position: absolute;
+right: 0;
+top: 0;
+margin: 0;
+}
+
+.menu__inner {
+  background: #e9e9e9;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.menu__inner a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 0;
+  width: 100%;
+}
+
+@media(max-width:900px) {
+  .header__menu {
+    width: 100%;
+    display: none;
+  }
 }
 
 .new-collection {
   position: relative;
   display: flex;
+  min-height: 850px;
 }
 
 .new-collection__girl {
 width: 549px;
 height: 562px;
-margin: 86px 54px 0px 169px;
+margin: 86px 54px 0px 180px;
 }
 
 .new-collection__section {
@@ -118,6 +146,7 @@ color: #000;
 }
 
 .new-collection__other {
+position: relative;
 outline: 0;
 border: 0;
 font-family: Montserrat, sans-serif;
@@ -131,24 +160,34 @@ color: #000;
 
 .new-collection__other::after {
 content: "";
-display: inline-block;
+position: absolute;
 background-image: url(./img/Vector%202.1.png);
-left: 19px;
-position: relative;
+top: 4px;
+left: 225px;
 width: 44px;
 height: 12px;
-color: #000;
 }
 
 .new-collection__scrooll {
+position: absolute;
 width: 27px;
 height: 46px;
+left: 707px;
+top: 815px;
+}
+
+.new-collection__strip {
+position: absolute;
+width: 2.45px;
+height: 8.21px;
+left: 719.27px;
+top: 826.5px;
 }
 
 .social-networks {
 position: absolute;
 bottom: 41px;
-left: 52px;
+left: 42px;
 }
 
 .social__link, .social__link-vk {
