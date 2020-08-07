@@ -97,7 +97,7 @@ cursor:pointer;
   .header__menu {
     min-height: 92px;
     min-width: 92px;
-    left: 1206px;
+    margin-left: auto;
   }
 
 .menu__link {
@@ -187,15 +187,18 @@ background: none;
 text-transform: uppercase;
 color: #000;
 cursor: pointer;
+padding: 14px 41px;
+border: 1.5px solid #000000;
+box-sizing: border-box;
 }
 
 .new-collection__farther:hover {
   background: #D3D3D3;
-  transform: scale(1.2);
 }
 
 .new-collection__other {
 position: relative;
+display: inline-block;
 outline: 0;
 border: 0;
 font-family: Montserrat, sans-serif;
@@ -208,10 +211,6 @@ color: #000;
 cursor: pointer;
 }
 
-.new-collection__other:hover{
-  transform: scale(1.2);
-}
-
 .new-collection__other::after {
 content: "";
 position: absolute;
@@ -222,20 +221,27 @@ width: 44px;
 height: 12px;
 }
 
-.new-collection__scrooll {
+.new-collection__other:hover {
+transform: scale(1.2);
+}
+
+.figure {
+position: absolute;
+left: 50%;
+bottom: 81px;
+}
+
+.figure__scrooll {
 position: absolute;
 width: 27px;
 height: 46px;
-left: 707px;
-bottom: 41px;
 }
 
-.new-collection__strip {
+.figure__strip {
 position: absolute;
 width: 3px;
 height: 8.21px;
-left: 719px;
-bottom: 68px;
+margin: 9px 10px 8px 11px;
 }
 
 .social-networks {
