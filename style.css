@@ -1,33 +1,33 @@
 .body {
-margin: 0;
+  margin: 0;
 }
 
 .header {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header::before {
-content: '';
-position: absolute;
-width: 461px;
-height: 1800px;
-background: #000;
+  content: '';
+  position: absolute;
+  width: 461px;
+  height: 1800px;
+  background: #000;
 }
 
 .header__title {
-position: relative;
-width: 98px;
-height: 37px;
-margin: 36px 0 0 52px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 37px;
-text-align: center;
-letter-spacing: 0.07em;
-color: #FFF;
+  position: relative;
+  width: 98px;
+  height: 37px;
+  margin: 36px 0 0 52px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  color: #FFF;
 }
 
 .header__language {
@@ -40,21 +40,21 @@ color: #FFF;
 }
 
 .header__language-ru {
-position: relative;
-width: 31px;
-height: 25px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: #FFF;
-cursor:pointer;
+  position: relative;
+  width: 31px;
+  height: 25px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFF;
+  cursor: pointer;
 }
 
 .header__language-ru::after {
   content: "";
-  position:absolute;
+  position: absolute;
   background-image: url(./img/Vector.png);
   height: 9px;
   width: 13px;
@@ -77,13 +77,13 @@ cursor:pointer;
 }
 
 .header__menu:hover {
-  background:#696969;
+  background: #696969;
 }
 
 .menu__item {
-   list-style-type: none;
-   padding: 0px;
-   margin:auto;
+  list-style-type: none;
+  padding: 0px;
+  margin: auto;
 }
 
 .menu__line {
@@ -100,22 +100,23 @@ cursor:pointer;
     margin-left: auto;
   }
 
-.menu__link {
-	color: navy;
-	font-size: 25px;
-}
+  .menu__link {
+    color: navy;
+    font-size: 25px;
+  }
 
-.icon__line:nth-child(1) {
+  .icon__line:nth-child(1) {
     top: 0px;
-}
+  }
 
-.icon__line:nth-child(2), .icon__line:nth-child(3) {
+  .icon__line:nth-child(2),
+  .icon__line:nth-child(3) {
     top: 13px;
-}
+  }
 
-.icon__line:nth-child(4) {
+  .icon__line:nth-child(4) {
     top: 26px;
-}
+  }
 
   .menu__line:first-of-type {
     margin-bottom: 5px;
@@ -126,140 +127,321 @@ cursor:pointer;
     height: 4px;
   }
 
-@media(max-width:900px) {
-  .header__menu {
-    width: 100%;
-    display: none;
+  @media(max-width:900px) {
+    .header__menu {
+      width: 100%;
+      display: none;
+    }
   }
-}
 
-.new-collection {
-  position: relative;
-  display: flex;
-  min-height: 850px;
-}
+  .new-collection {
+    position: relative;
+    display: flex;
+    min-height: 850px;
+  }
 
-.new-collection__girl {
-width: 549px;
-height: 562px;
-margin: 86px 54px 0px 180px;
-}
+  .new-collection__girl {
+    width: 549px;
+    height: 562px;
+    margin: 86px 54px 0px 180px;
+  }
 
-.new-collection__section {
-  position:relative;
-  top: 100px;
-}
+  .new-collection__section {
+    position: relative;
+    top: 100px;
+  }
 
-.new-collection__title {
-width: 475px;
-height: 164px;
-margin-bottom: 36px;
-left: 789px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 80px;
-line-height: 82px;
-color: #000;
-}
+  .new-collection__title {
+    width: 475px;
+    height: 164px;
+    margin-bottom: 36px;
+    left: 789px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 82px;
+    color: #000;
+  }
 
-.new-collection__description {
-width: 508px;
-margin-bottom: 36px;
-font-family: Montserrat, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 25px;
-color: #000;
-}
+  .new-collection__description {
+    width: 508px;
+    margin-bottom: 36px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: #000;
+  }
 
-.new-collection__farther {
-width: 203px;
-height: 44px;
-margin-right: 54px;
-font-family: Montserrat, sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 0;
-background: none;
-text-transform: uppercase;
-color: #000;
-cursor: pointer;
-padding: 14px 41px;
-border: 1.5px solid #000000;
-box-sizing: border-box;
-}
+  .new-collection__farther {
+    width: 203px;
+    height: 44px;
+    margin-right: 54px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 0;
+    background: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    padding: 14px 41px;
+    border: 1.5px solid #000000;
+    box-sizing: border-box;
+  }
 
-.new-collection__farther:hover {
-  background: #D3D3D3;
-}
+  .new-collection__farther:hover {
+    background: #D3D3D3;
+  }
 
-.new-collection__other {
-position: relative;
-display: inline-block;
-outline: 0;
-border: 0;
-font-family: Montserrat, sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-background: none;
-text-transform: uppercase;
-color: #000;
-cursor: pointer;
-}
+  .new-collection__other {
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    background: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+  }
 
-.new-collection__other::after {
-content: "";
-position: absolute;
-background-image: url(./img/Vector%202.1.png);
-top: 4px;
-left: 225px;
-width: 44px;
-height: 12px;
-}
+  .new-collection__other::after {
+    content: "";
+    position: absolute;
+    background-image: url(./img/Vector%202.1.png);
+    top: 4px;
+    left: 225px;
+    width: 44px;
+    height: 12px;
+  }
 
-.new-collection__other:hover {
-transform: scale(1.2);
-}
+  .new-collection__other:hover {
+    transform: scale(1.2);
+  }
 
-.figure {
-position: absolute;
-left: 50%;
-bottom: 81px;
-}
+  .figure {
+    position: absolute;
+    left: 50%;
+    bottom: 81px;
+  }
 
-.figure__scrooll {
-position: absolute;
-width: 27px;
-height: 46px;
-}
+  .figure__scrooll {
+    position: absolute;
+    width: 27px;
+    height: 46px;
+  }
 
-.figure__strip {
-position: absolute;
-width: 3px;
-height: 8.21px;
-margin: 9px 10px 8px 11px;
-}
+  .figure__strip {
+    position: absolute;
+    width: 3px;
+    height: 8.21px;
+    margin: 9px 10px 8px 11px;
+  }
 
-.social-networks {
-position: absolute;
-bottom: 41px;
-left: 42px;
-transition: 1s;
-cursor: pointer;
-}
+  .social-networks {
+    position: absolute;
+    bottom: 41px;
+    left: 42px;
+    transition: 1s;
+    cursor: pointer;
+  }
 
-.social-networks:hover {
-  transform: scale(1.2);
-}
+  .social-networks:hover {
+    transform: scale(1.2);
+  }
 
-.social__link, .social__link-vk {
-  margin-right: 13px;
-}
+  .social__link,
+  .social__link-vk {
+    margin-right: 13px;
+  }
 
-.clutch {
-margin-top: 500px;
-}
+  .clutch {
+    margin-top: 500px;
+  }
+
+  .total-look {
+    position: relative;
+    min-height: 850px;
+    background: #EBE3D8;
+  }
+
+  .total-look::after {
+    content: '';
+    position: absolute;
+    width: 73px;
+    height: 850px;
+    left: 388px;
+    top: 0;
+    background: #000;
+  }
+
+  .total-look__clothes {
+    position: absolute;
+    width: 827px;
+    height: 621px;
+    left: 88px;
+    top: 139px;
+  }
+
+  .total-look__square {
+    position: relative;
+    width: 475px;
+    height: 351px;
+    left: 817px;
+    top: 255px;
+    background: #FAE8E4;
+  }
+
+  .total-look__title {
+    position: relative;
+    width: 375px;
+    height: 41px;
+    left: 47px;
+    top: 34px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 41px;
+  }
+
+  .total-look__subtitle {
+    position: relative;
+    width: 220px;
+    height: 17px;
+    left: 47px;
+    top: 17px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: .07em;
+    color: #000;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  .total-look__description {
+    position: relative;
+    width: 368px;
+    height: 0;
+    left: 50px;
+    top: 35px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000;
+    opacity: 0.5;
+  }
+
+  .total-look__presents {
+    position: relative;
+    width: 368px;
+    height: 0;
+    left: 50px;
+    top: 45px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000;
+    opacity: 0.5;
+  }
+
+  .total-look__quantity {
+    position: relative;
+    width: 100px;
+    height: 44px;
+    left: 47px;
+    top: 130px;
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  .total-look__basket {
+    position: relative;
+    width: 253px;
+    height: 44px;
+    left: 60px;
+    top: 130px;
+    border: 1.5px solid #000;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 0;
+    cursor: pointer;
+    background: none;
+    text-transform: uppercase;
+  }
+
+  .total-look__other {
+    position: relative;
+    width: 299px;
+    height: 14px;
+    left: 910px;
+    top: 343px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background: none;
+    outline: 0;
+    border: 0;
+    cursor:pointer;
+  }
+
+  .total-look__other::after {
+    content: "";
+    position: absolute;
+    background-image: url(./img/Vector%202.3.png);
+    width: 110px;
+    height: 13px;
+    top: 4px;
+    left: 280px;
+  }
+
+  .footer {
+    position: relative;
+    width: 112px;
+    height: 15px;
+    left: 1212px;
+    top: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  .footer::after {
+    content: "";
+    position: absolute;
+    background-image: url(./img/Маленький%20желто-белый-svg.png);
+    width: 82px;
+    height: 22px;
+    left: 125px;
+    top: 0;
+  }
