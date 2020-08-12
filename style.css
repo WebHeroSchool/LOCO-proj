@@ -284,6 +284,7 @@
     height: 621px;
     left: 88px;
     top: 139px;
+    z-index: 1;
   }
 
   .total-look__square {
@@ -293,6 +294,7 @@
     left: 817px;
     top: 255px;
     background: #FAE8E4;
+    z-index: 2;
   }
 
   .total-look__title {
@@ -419,11 +421,11 @@
   }
 
   .footer {
-    position: relative;
+    position: absolute;
     width: 112px;
     height: 15px;
-    left: 1212px;
-    top: 0;
+    left: 85%;
+    top: 810px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -441,4 +443,3 @@
     left: 125px;
     top: 0;
   }
-  
