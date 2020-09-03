@@ -295,7 +295,44 @@
       margin-right: 13px;
     }
 
-    @media (max-width: 565px) {
+    @media (max-width: 1654px) {
+      .new-collection__girl{
+        position: relative;
+        width: 350px;
+        height: 370px;
+        top: 100px;
+      }
+      .new-collection__section {
+        position: relative;
+        left: 0 auto;
+      }
+    }
+
+    @media (max-width: 1425px){
+      .header::before{
+        width: 250px;
+      }
+      .header__title{
+        width: 50px;
+        height: 15px;
+        margin: 36px 0 0 15px;
+      }
+      .new-collection__section{
+        position: relative;
+        left: 0 auto;
+      }
+      .new-collection__girl{
+        position: relative;
+        left: 20px;
+        margin: 0 40px 0 0;
+        top: 200px;
+      }
+      .figure{
+        display: none;
+      }
+    }
+
+    @media (max-width: 465px) {
       .adaptive {
         display: none;
       }
@@ -506,8 +543,8 @@
    text-shadow: 1px 1px 2px #dcdcdc;
   }
 
-@media (max-width: 1300px) {
- .wrap {
+  @media (max-width: 1300px) {
+    .wrap {
    padding-right: 30px;
    padding-left: 0;
  }
@@ -606,7 +643,7 @@
    width: 224px;
    height: 240px;
    margin-bottom: 30px;
-   background: url(img/pinkbag-mobile.png) center/cover no-repeat;
+   background: url(img/pink.png) center/cover no-repeat;
  }
 
  .bag {
