@@ -348,8 +348,8 @@
     }
 
     @media (max-width: 500px) {
-      .header::before {
-      width: 0;
+      .header::before{
+        display: none;
       }
       .new-collection__section{
         left: 0;
