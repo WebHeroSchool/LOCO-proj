@@ -42,22 +42,24 @@
   }
 
   .header__language-ru {
-    position: relative;
-    width: 31px;
-    height: 25px;
+    color: #fff;
+    background: url('img/Vector.png') right no-repeat;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 500;
+    padding: 0 18px 0 0;
     font-size: 20px;
+    font-weight: 500;
     line-height: 24px;
-    color: #FFF;
+    height: 25px;
+    width: 31px;
+    position: relative;
     cursor: pointer;
   }
 
   .header__language-ru::after {
     content: "";
+    color: #fff;
     position: absolute;
-    background-image: url(./img/Vector.png);
     height: 9px;
     width: 13px;
     left: 40px;
@@ -70,15 +72,25 @@
 
   .header__menu {
     display: flex;
+    margin-left: auto;
     position: relative;
     align-self: flex-end;
-    margin-left: auto;
     cursor: pointer;
   }
 
   .header__menu: hover {
   background: #696969;
   }
+
+  .block {
+    position: absolute;
+    top: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+ }
 
   .menu__item {
     list-style-type: none;
@@ -191,8 +203,8 @@
     }
 
     .new-collection__title {
-      margin-bottom: 36px;
-      font-family: Montserrat;
+      margin-bottom: 26px;
+      font-family: Montserrat, sans-serif ;
       font-style: normal;
       font-weight: bold;
       font-size: 80px;
@@ -201,12 +213,12 @@
     }
 
     .new-collection__description {
-      margin-bottom: 36px;
+      margin-bottom: 40px;
       font-family: Montserrat, sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 17px;
-      line-height: 25px;
+      font-size: 15px;
+      line-height: 22px;
       color: #000;
     }
 
@@ -366,23 +378,27 @@
         max-width: 250px;
         line-height: 50px;
    }
+      
     .new-collection__girl {
       width: 350px;
       height: 390px;
       padding-left: 30px;
   }
+      
    .new-collection__section {
      padding: 0 20px;
   }
+      
    .new-collection {
      height: 708px;
  }
+      
   .figure {
     padding-left: 240px;
  }
 }
 
-    @media (max-width: 786px) {
+    @media (max-width: 768px) {
       .adaptive, .new-collection__description, .new-collection__other, .new-collection__farther, .header__language, .header::before, .new-collection__girl, .social-networks, .figure  {
     display: none;
 }
