@@ -853,12 +853,12 @@
   .total-look__other {
     background: url(./img/Vector%202.3.png) right no-repeat;
     width: 350px;
-    top: 415px;
     font-size: 13px;
     line-height: 16px;
+    top: 415px;
     font-family: Montserrat, sans-serif;
     position: absolute;
-    left:120px;
+    left: 120px;
     border: none;
   }
 
