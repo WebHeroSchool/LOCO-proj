@@ -1,4 +1,5 @@
   .body {
+    font-family: Montserrat,sans-serif;
     font-size: 15px;
     margin: 0;
   }
@@ -853,6 +854,9 @@
   .total-look__other {
     background: url(./img/Vector%202.3.png) right no-repeat;
     width: 350px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 500;
     font-size: 13px;
     line-height: 16px;
     top: 415px;
